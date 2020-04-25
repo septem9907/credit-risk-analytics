@@ -12,7 +12,7 @@ mortgage.head()
 # 1. Linear Model
 
 # %%
-linear_model = smf.ols("default_time ~ FICO_orig_time + LTV_orig_time + gdp_time", data=mortage).fit()
+linear_model = smf.ols("default_time ~ FICO_orig_time + LTV_orig_time + gdp_time", data=mortgage).fit()
 linear_model.summary()
 
 # %%
